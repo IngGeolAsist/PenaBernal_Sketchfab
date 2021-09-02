@@ -1,3 +1,3 @@
 # MapaPrueba
 
-https://virtualab-gis.github.io/MapaPrueba/ExampleLeafletElevation-geojson.html
+https://inggeolasist.github.io/PenaBernal_Sketchfab/
