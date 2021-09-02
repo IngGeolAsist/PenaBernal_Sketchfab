@@ -136,28 +136,28 @@ var contacts = L.geoJson(contacts,{
 	}).addTo (map);
 
 //sketchfab
-		var skf = [
-    		[19.113425, -99.195205]
-		];
+var skf = [
+    [19.113425, -99.195205]
+];
 
-		var arregloDeMarcadores =[];
+var arregloDeMarcadores =[];
 
-	 	var skfIcon = L.icon({
-    			iconUrl: 'Icon/sketchfab.png',
-    			iconSize: [25, 25],
-    			iconAnchor: [25, 25],
-    			popupAnchor: [-3, -76],
-		});
+var skfIcon = L.icon({
+    iconUrl: 'Icon/sketchfab.png',
+    iconSize: [25, 25],
+    iconAnchor: [25, 25],
+    popupAnchor: [-3, -76],
+});
 
-		for (var i=0; i < skf.length; i++) {
-  		  arregloDeMarcadores[i] = new L.marker(skf[i], {icon: skfIcon}).addTo(map);
-		}
+for (var i=0; i < skf.length; i++) {
+   arregloDeMarcadores[i] = new L.marker(skf[i], {icon: skfIcon}).addTo(map);
+}
 
-		var popupskf = L.popup({
-  			minWidth: 250
-		}).setContent('<div class="sketchfab-embed-wrapper"> <iframe title="Roca con geometría ideal para SfM" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/e0436b009cbd439db659a1def4f959ba/embed?autostart=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/roca-con-geometria-ideal-para-sfm-e0436b009cbd439db659a1def4f959ba?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Roca con geometría ideal para SfM </a> by <a href="https://sketchfab.com/IngenieriaGeologicaAsistida?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Ingeniería Geológica Asistida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>')
+var popupskf = L.popup({
+  minWidth: 250
+}).setContent('<div class="sketchfab-embed-wrapper"> <iframe title="Roca con geometría ideal para SfM" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="640" height="480" src="https://sketchfab.com/models/e0436b009cbd439db659a1def4f959ba/embed?autostart=1"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/roca-con-geometria-ideal-para-sfm-e0436b009cbd439db659a1def4f959ba?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Roca con geometría ideal para SfM </a> by <a href="https://sketchfab.com/IngenieriaGeologicaAsistida?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Ingeniería Geológica Asistida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=e0436b009cbd439db659a1def4f959ba" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>')
 
-		arregloDeMarcadores[0].bindPopup(popupskf);
+arregloDeMarcadores[0].bindPopup(popupskf);
  
 		
 		
